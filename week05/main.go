@@ -1,0 +1,13 @@
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func main() {
+	var now time.Time = time.Now()
+	year := now.Year()
+	var month string = now.Month().String()
+	fmt.Println(year, month, now.Day(), now.Hour(), now.Minute(), now.Second())
+}
