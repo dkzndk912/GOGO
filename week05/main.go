@@ -14,8 +14,8 @@ import (
 func main() {
 	rand.Seed(time.Now().Unix()) // get ther current datat and time as an intger
 	answer := rand.Intn(100) + 1 // random intger number betwwen
-	fmt.Println("game start")
-	fmt.Println((answer))
+	fmt.Println("!game start!")
+	// fmt.Println((answer))
 
 	reader := bufio.NewReader(os.Stdin)
 	for i := 0; i < 10; i++ {
