@@ -14,5 +14,11 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println(InputScore)
+
+	if InputScore >= 90 {
+		grade := "A grade!"
+	} else {
+		grade := "hmmm"
+	}
+	fmt.Println(grade)
 }
