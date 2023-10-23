@@ -3,6 +3,9 @@ package main
 import "fmt"
 
 func swap(n1 *int, n2 *int) {
+	fmt.Println(n1, n2)
+	fmt.Printf("%T, %T", n1, n2)
+
 	temp := *n1
 	*n1 = *n2
 	*n2 = temp
