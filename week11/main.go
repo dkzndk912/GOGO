@@ -13,4 +13,19 @@ func main() {
 
 	test := [5]bool{true, true, true}
 	fmt.Println(test[3]) // boolean타입의 제로값
+
+	i := 0
+	for i < len(primes) {
+		fmt.Println(primes[i])
+		i++
+	}
+
+	for idx, prime := range primes { // idx를 빼서 값만 출력하라 했으나 인덱스가 출력됨
+		fmt.Println(idx, prime) // 선언된 변수를 사용하지 않으면 에러난다
+	}
+	for _, prime := range primes { // 빈식별자로 해결
+		fmt.Println(prime)
+	}
+	fmt.Printf("%#v", primes)
+	fmt.Printf("%#v", test)
 }
