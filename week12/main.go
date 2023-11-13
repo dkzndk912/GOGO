@@ -16,4 +16,12 @@ func main() {
 	for _, v := range s {
 		fmt.Println(v)
 	}
+
+	println("----------------")
+
+	copyS := s[1:4]
+
+	for _, v := range copyS {
+		fmt.Println(v)
+	}
 }
