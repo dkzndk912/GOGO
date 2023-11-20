@@ -3,37 +3,20 @@ package main
 import "fmt"
 
 func main() {
-	// var s []int
-	// s = make([]int, 5)
+	a := []string{"a", "b", " c", "d"}
+	a = append(a, "e")
+	as := a[:2]
+	as[1] = "2"
+	fmt.Println(a)
+	fmt.Println(as)
 
-	// s := make([]int, 5)
+	b := make([]string, 4, 5)
+	b[0] = "a"
+	b[2] = "c"
+	b[3] = "d"
+	bs := b[0:2]
+	b[0] = "a"
 
-	s := []int{0, 0, 0, 0, 0}
+	fmt.Println(b, len(b), cap(b))
 
-	s[4] = 99
-	s[2] = 91
-
-	for _, v := range s {
-		fmt.Println(v)
-	}
-
-	println("----------------")
-
-	copyS := s[1:4]
-
-	for _, v := range copyS {
-		fmt.Println(v)
-	}
-
-	println("----------------")
-
-	test := [3]string{"inha", "go", "student"} // test 배열생성
-	// testS := test[0:2]
-	// fmt.Println(len(testS))
-
-	testS := test[:2]
-	test2S := test[1:]
-	test2S[0] = "python"
-	fmt.Println(test2S[1])
-	fmt.Println(testS, len(testS))
 }
